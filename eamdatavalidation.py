@@ -1,6 +1,8 @@
+from operator import index
 import streamlit as st 
 import pandas as pd
 import numpy as np 
+import plotly.express as px
 
 st.title("EAM Data Validation")
 st.text("This is going to do some cool shit, you wait and see")
