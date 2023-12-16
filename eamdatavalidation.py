@@ -33,7 +33,7 @@ if choice == "Upload":
         # Set the aesthetic style of the plots
         sns.set_style("whitegrid")
 
-        # Plot
+        # Plot this
         plt.figure(figsize=(8, 4))
         sns.barplot(x="Position", y="Salary", data=df)
         plt.title("Salary by Position")
