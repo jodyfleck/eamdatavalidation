@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+operator
+streamlit 
+plotly
+pandas_profiling
+streamlit_pandas_profiling
+pycaret
