@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np 
 #import plotly as px
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import seaborn
 #import pandas_profiling
 #from streamlit_pandas_profiling import st_profile_report 
@@ -30,16 +30,17 @@ if choice == "Upload":
         st.table(df.head(10))
         #st.dataframe(df)
 
+''''
         # Set the aesthetic style of the plots
         sns.set_style("whitegrid")
 
-        # Plot this
+       --- # Plot this
         plt.figure(figsize=(8, 4))
         sns.barplot(x="Position", y="Salary", data=df)
         plt.title("Salary by Position")
         plt.xlabel("Position")
         plt.ylabel("Salary")
         plt.show()
-
+'''
 
 
