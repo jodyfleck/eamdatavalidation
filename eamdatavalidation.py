@@ -21,8 +21,8 @@ if choice == "Upload":
         df.to_csv('dataset.csv', index=None)
         # Display the count of rows and columns
         num_rows, num_cols = df.shape
-        st.write(f"Success: Number of rows: {num_rows}, Number of columns: {num_cols}")
-        st.table(df.head(5))
+        st.write(f"Success: Rows: {num_rows}, Columns: {num_cols}")
+        st.table(df.head(10))
         #st.dataframe(df)
 
 
