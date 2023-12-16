@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np 
 
+st.title("EAM Data Validation")
+st.text("This is going to do some cool shit, you wait and see")
+
 with st.sidebar: 
     st.image("https://www.onepointltd.com/wp-content/uploads/2020/03/inno2.png")
     st.title("Application Options")
@@ -15,6 +18,5 @@ if choice == "Upload":
         df = pd.read_csv(file, index_col=None)
         df.to_csv('dataset.csv', index=None)
         st.dataframe(df)
-        
-st.title("EAM Data Validation")
-st.text("This is going to do some cool shit, you wait and see")
+
+
