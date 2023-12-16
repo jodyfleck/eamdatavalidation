@@ -17,8 +17,9 @@ if choice == "Upload":
     if file: 
         df = pd.read_csv(file, index_col=None)
         df.to_csv('dataset.csv', index=None)
-        st.text("Upload successful")
+        st.text("Upload successful, top 10 rows displayed")
+        st.table(df.head(10))
         #st.dataframe(df)
-        
+
 
 
