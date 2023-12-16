@@ -2,12 +2,10 @@ from operator import index
 import streamlit as st 
 import pandas as pd
 import numpy as np 
-import plotly.express as px
+import plotly as px
 #import pandas_profiling
 #from streamlit_pandas_profiling import st_profile_report 
-from pycaret.regression import setup, compare_models, pull, save_model, load_model
-
-
+#from pycaret.regression import setup, compare_models, pull, save_model, load_model
 
 st.title("EAM Data Validation")
 st.text("This is going to do some cool shit, you wait and see")
@@ -17,8 +15,6 @@ with st.sidebar:
     st.title("Application Options")
     choice = st.radio("Navigation", ["Upload","Profiling","Modelling", "Download"])
     st.info("This project application helps you build and explore your data.")
-
-
 
 if choice == "Upload":
     st.title("Upload Your Dataset")
