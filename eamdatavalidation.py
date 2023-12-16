@@ -8,5 +8,13 @@ with st.sidebar:
     choice = st.radio("Navigation", ["Upload","Profiling","Modelling", "Download"])
     st.info("This project application helps you build and explore your data.")
 
+if choice == "Upload":
+    st.title("Upload Your Dataset")
+    file = st.file_uploader("Upload Your Dataset")
+    if file: 
+        df = pd.read_csv(file, index_col=None)
+        df.to_csv('dataset.csv', index=None)
+        st.dataframe(df)
+        
 st.title("EAM Data Validation")
 st.text("This is going to do some cool shit, you wait and see")
