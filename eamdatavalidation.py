@@ -11,14 +11,18 @@ with st.sidebar:
     choice = st.radio("Navigation", ["Upload","Profiling","Modelling", "Download"])
     st.info("This project application helps you build and explore your data.")
 
+
+
 if choice == "Upload":
     st.title("Upload Your Dataset")
     file = st.file_uploader("Upload Your Dataset")
     if file: 
         df = pd.read_csv(file, index_col=None)
         df.to_csv('dataset.csv', index=None)
-        st.text("Upload successful, top 10 rows displayed")
-        st.table(df.head(10))
+        # Display the count of rows and columns
+        num_rows, num_cols = df.shape
+        st.write(f"Success: Number of rows: {num_rows}, Number of columns: {num_cols}")
+        st.table(df.head(5))
         #st.dataframe(df)
 
 
