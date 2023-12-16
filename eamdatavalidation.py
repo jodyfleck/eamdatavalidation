@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np 
 
 
-print("hello, wazzup")
+
 
 st.title("EAM Data Validation")
+st.text("This is going to do some cool shit, you wait and see")
